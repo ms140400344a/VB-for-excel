@@ -1,0 +1,16 @@
+VBA shortcuts in Excel
+
+The following are some of the shortcuts that work when using VBA in MS Excel:
+
+    Alt + F11: Open VBA Editor
+    Alt + F8: Display all macros
+    Alt + F4: Close VBA Editor and return to Excel
+    F7: Open code editor
+    F1: Display Help
+    Ctrl + Space: Autocomplete
+    F10: Activate menu bar
+    Home: Beginning of line
+    Alt + F5: Run Error Handler
+    Alt + F6: Switch between the last two windows
+    Alt + F11: Toggle between VBA Editor and Excel
+
