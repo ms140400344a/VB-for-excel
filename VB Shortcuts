@@ -13,4 +13,189 @@ The following are some of the shortcuts that work when using VBA in MS Excel:
     Alt + F5: Run Error Handler
     Alt + F6: Switch between the last two windows
     Alt + F11: Toggle between VBA Editor and Excel
+    
+   EXCEL COMMADD With brief discription
 
+XLOOKUP	Replaces VLOOKUP, HLOOKUP, and INDEX / MATCH	XLOOKUP(lookup_value,lookup_array,return_array,[match_mode],[search_mode])	
+Logical	yes		
+AND	      Checks whether all conditions are met. TRUE/FALSE	AND(logical1,logical2)	and 
+IF	      If condition is met, do something, if not, do something else.	IF(logical_test,value_if_true,value_if_false)	if 
+IFERROR	  If result is an error then do something else.	IFERROR(VALUE,value_if_error)	
+NOT	      Changes TRUE to FALSE and FALSE to TRUE.	NOT(logical)	not 
+OR	      Checks whether any conditions are met. TRUE/FALSE	OR(logical1,logical2)	or 
+XOR	      Checks whether one and only one condition is met. TRUE/FALSE	XOR(logical1,logical2)	xor 
+Lookup & Reference	yes		
+FALSE	    The logical value: FALSE.	FALSE	
+TRUE	    The logical value: TRUE.	TRUE	
+ADDRESS	    Returns a cell address as text.	ADDRESS(row_num,column_num,abs_num,C1,sheet_text)	address 
+AREAS	    Returns the number of areas in a reference.	AREAS(reference)	
+CHOOSE	    Chooses a value from a list based on it's position number.	CHOOSE(index_num,value1,value2)	
+COLUMN	    Returns the column number of a cell reference.	COLUMN(reference)	column 
+COLUMNS	    Returns the number of columns in an array.	COLUMNS(array)	columns 
+HLOOKUP	    Lookup a value in the first row and return a value.	HLOOKUP(lookup_value,table_array,row_index_num,range_lookup)	hlookup 
+HYPERLINK	Creates a clickable link.	HYPERLINK(link_location,friendly_name)	hyperlink 
+INDEX	    Returns a value based on it's column and row numbers.	INDEX(array,row_num,column_num)	index 
+INDIRECT	Creates a cell reference from text.	INDIRECT(ref_text,C1)	indirect 
+LOOKUP	    Looks up values either horizontally or vertically.	LOOKUP(lookup_value,lookup_vector,result_vector)	
+MATCH	    Searches for a value in a list and returns its position.	MATCH(lookup_value,lookup_array,match_type)	match 
+OFFSET	    Creates a reference offset from a starting point.	OFFSET(reference,rows,cols,height,width)	offset 
+ROW	        Returns the row number of a cell reference.	ROW(reference)	row 
+ROWS	    Returns the number of rows in an array.	ROWS(array)	rows 
+TRANSPOSE	Flips the oriention of a range of cells.	TRANSPOSE(array)	
+VLOOKUP	    Lookup a value in the first column and return a value.	VLOOKUP(lookup_value,table_array,col_index_num,range_lookup)	vlookup 
+Date & Time	yes		
+DATE	    Returns a date from year, month, and day.	DATE(year,month,day)	date 
+DATEDIF	    Number of days, months or years between two dates.	DATEDIF	
+DATEVALUE	Converts a date stored as text into a valid date	DATEVALUE(date_text)	datevalue 
+DAY	        Returns the day as a number (1-31).	DAY(serial_number)	day 
+DAYS	    Returns the number of days between two dates.	DAYS(end_date,start_date)	days 
+DAYS360	    Returns days between 2 dates in a 360 day year.	DAYS360(start_date,end_date,method)	days360 
+EDATE	    Returns a date, n months away from a start date.	EDATE(start_date,months)	edate 
+EOMONTH	    Returns the last day of the month, n months away date.	EOMONTH(start_date,months)	eomonth 
+HOUR	    Returns the hour as a number (0-23).	HOUR(serial_number)	hour 
+MINUTE	    Returns the minute as a number (0-59).	MINUTE(serial_number)	minute 
+MONTH	    Returns the month as a number (1-12).	MONTH(serial_number)	month 
+NETWORKDAYS	Number of working days between 2 dates.	NETWORKDAYS(start_date,end_date,holidays)	networkdays 
+NETWORKDAYS.INTL	Working days between 2 dates, custom weekends. 	NETWORKDAYS.INTL(start_date,end_date,weekend,holidays)	
+NOW	        Returns the current date and time.	NOW()	
+SECOND	    Returns the second as a number (0-59)	SECOND(serial_number)	second 
+TIME	    Returns the time from a hour, minute, and second.	TIME(hour,minute,second)	time 
+TIMEVALUE	Converts a time stored as text into a valid time.	TIMEVALUE(time_text)	timevalue 
+TODAY	    Returns the current date.	TODAY()	today 
+WEEKDAY	    Returns the day of the week as a number (1-7).	WEEKDAY(serial_number,return_type)	weekday 
+WEEKNUM	    Returns the week number in a year (1-52).	WEEKNUM(serial_number,return_type)	weeknum 
+WORKDAY	    The date n working days from a date.	WORKDAY(start_date,days,holidays)	workday 
+WORKDAY.INTL	The date n working days from a date, custom weekends.	WORKDAY.INTL(start_date,days,weekend,holidays)	
+YEAR	    Returns the year.	YEAR(serial_number)	year 
+YEARFRAC	Returns the fraction of a year between 2 dates.	YEARFRAC(start_date,end_date,basis)	yearfrac 
+Engineering	yes		
+CONVERT	Convert number from one unit to another.	CONVERT(number,from_unit,to_unit)	convert 
+Financial	yes		
+FV	        Calculates the future value.	FV(rate,nper,pmt,pv,type)	fv 
+PV	        Calculates the present value.	PV(rate,nper,pmt,fv,type)	pv 
+NPER	    Calculates the total number of payment periods.	NPER(rate,pmt,pv,fv,type)	nper 
+PMT	        Calculates the payment amount.	PMT(rate,nper,pv,fv,type)	pmt 
+RATE	    Calculates the interest Rate.	RATE(nper,pmt,pv,fv,type,guess)	rate 
+NPV	        Calculates the net present value.	NPV(rate,value1,value2)	npv 
+IRR	        The internal rate of return for a set of periodic CFs.	IRR(values,guess)	irr 
+XIRR	    The internal rate of return for a set of non-periodic CFs.	XIRR(values,dates,guess)	xirr 
+PRICE	    Calculates the price of a bond.	PRICE(settlement,maturity,rate,yld,redemption,FREQUENCY,basis)	price 
+YIELD	    Calculates the bond yield.	YIELD(settlement,maturity,rate,pr,redemption,FREQUENCY,basis)	yield 
+INTRATE	    The interest rate of a fully invested security.	INTRATE(settlement,maturity,investment,redemption,basis)	
+Information	yes		
+CELL	    Returns information about a cell.	CELL(info_type,reference)	cell 
+ERROR.TYPE	Returns a value representing the cell error.	ERROR.TYPE(error_val)	
+ISBLANK	    Test if cell is blank. TRUE/FALSE	ISBLANK(VALUE)	isblank 
+ISERR	    Test if cell value is an error, ignores #N/A. TRUE/FALSE	ISERR(VALUE)	iserr 
+ISERROR	    Test if cell value is an error. TRUE/FALSE	ISERROR(VALUE)	iserror 
+ISEVEN	    Test if cell value is even. TRUE/FALSE	ISEVEN(number)	iseven 
+ISFORMULA	Test if cell is a formula. TRUE/FALSE	ISFORMULA(reference)	isformula 
+ISLOGICAL	Test if cell is logical (TRUE or FALSE). TRUE/FALSE	ISLOGICAL(VALUE)	islogical 
+ISNA	    Test if cell value is #N/A. TRUE/FALSE	ISNA(VALUE)	isna 
+ISNONTEXT	Test if cell is not text (blank cells are not text). TRUE/FALSE	ISNONTEXT(VALUE)	isnontext 
+ISNUMBER	Test if cell is a number. TRUE/FALSE	ISNUMBER(VALUE)	isnumber 
+ISODD	    Test if cell value is odd. TRUE/FALSE	ISODD(number)	
+ISREF	    Test if cell value is a reference. TRUE/FALSE	ISREF(VALUE)	isref 
+ISTEXT	    Test if cell is text. TRUE/FALSE	ISTEXT(VALUE)	istext 
+N	        Converts a value to a number.	N(VALUE)	
+NA	        Returns the error: #N/A.	NA()	
+TYPE	    Returns the type of value in a cell.	TYPE(VALUE)	
+Math	    yes		
+ABS	        Calculates the absolute value of a number.	ABS(number)	abs 
+AGGREGATE	Define and perform calculations for a database or a list.	AGGREGATE(function_num,options,array,k)	
+CEILING	    Rounds a number up, to the nearest specified multiple.	CEILING(number,significance)	ceiling 
+COS	        Returns the cosine of an angle.	COS(number)	cos 
+DEGREES	    Converts radians to degrees.	DEGREES(angle)	degrees 
+DSUM	    Sums database records that meet certain criteria.	DSUM(database,field,criteria)	dsum 
+EVEN	    Rounds to the nearest even integer.	EVEN(number)	
+EXP	        Calculates the exponential value for a given number.	EXP(number)	exp 
+FACT	    Returns the factorial.	FACT(number)	
+FLOOR	    Rounds a number down, to the nearest specified multiple.	FLOOR(number,significance)	floor 
+GCD	        Returns the greatest common divisor.	GCD(number1,number2)	
+INT	        Rounds a number down to the nearest integer.	INT(number)	
+LCM	        Returns the least common multiple.	LCM(number1,number2)	
+LN	        Returns the natural logarithm of a number.	LN(number)	ln 
+LOG	        Returns the logarithm of a number to a specified base.	LOG(number,base)	log 
+LOG10	    Returns the base-10 logarithm of a number.	LOG10(number)	log10 
+MOD	        Returns the remainder after dividing.	MOD(number,divisor)	mod 
+MROUND	    Rounds a number to a specified multiple.	MROUND(number,multiple)	mround 
+ODD	        Rounds to the nearest odd integer.	ODD(number)	
+PI	        The value of PI.	PI()	pi 
+POWER	    Calculates a number raised to a power.	POWER(number,power)	power 
+PRODUCT	    Multiplies an array of numbers.	PRODUCT(number1,number2)	product 
+QUOTIENT	Returns the integer result of division.	QUOTIENT(numerator,denominator)	quotient 
+RADIANS	    Converts an angle into radians.	RADIANS(angle)	radians 
+RAND	    Calculates a random number between 0 and 1.	RAND()	rand 
+RANDBETWEEN	Calculates a random number between two numbers.	RANDBETWEEN(bottom,top)	randbetween 
+ROUND	    Rounds a number to a specified number of digits.	ROUND(number,num_digits)	round 
+ROUNDDOWN	Rounds a number down (towards zero).	ROUNDDOWN(number,num_digits)	rounddown 
+ROUNDUP  	Rounds a number up (away from zero).	ROUNDUP(number,num_digits)	roundup 
+SIGN	    Returns the sign of a number.	SIGN(number)	
+SIN	        Returns the sine of an angle.	SIN(number)	sin 
+SQRT	    Calculates the square root of a number.	SQRT(number)	sqrt 
+SUBTOTAL	Returns a summary statistic for a series of data.	SUBTOTAL(function_num,REH1)	subtotal 
+SUM	        Adds numbers together.	SUM(number1,number2)	sum 
+SUMIF	    Sums numbers that meet a criteria.	SUMIF(range,criteria,sum_range)	sumif 
+SUMIFS	    Sums numbers that meet multiple criteria.	SUMIFS(sum_range,criteria_range,criteria)	
+SUMPRODUCT	Multiplies arrays of numbers and sums the resultant array.	SUMPRODUCT(array1,array2,array3)	sumproduct 
+TAN	        Returns the tangent of an angle.	TAN(number)	tan 
+TRUNC	    Truncates a number to a specific number of digits.	TRUNC(number,num_digits)	
+Stats	    yes		
+AVERAGE	    Averages numbers.	AVERAGE(number1,number2)	average 
+AVERAGEA	Averages numbers. Includes text & FALSE =0, TRUE =1.	AVERAGEA(value1,value2)	averagea 
+AVERAGEIF	Averages numbers that meet a criteria.	AVERAGEIF(range,criteria,average_range)	averageif 
+AVERAGEIFS	Averages numbers that meet multiple criteria.	AVERAGEIFS(average_range,criteria_range,criteria)	
+CORREL	    Calculates the correlation of two series.	CORREL(array1,array2)	correl 
+COUNT	    Counts cells that contain a number.	COUNT(value1,value2)	count 
+COUNTA	    Count cells that are non-blank.	COUNTA(value1,value2)	counta 
+COUNTBLANK	Counts cells that are blank.	COUNTBLANK(range)	countblank 
+COUNTIF	    Counts cells that meet a criteria.	COUNTIF(range,criteria)	countif 
+COUNTIFS	Counts cells that meet multiple criteria.	COUNTIFS(criteria_range,criteria)	
+FORECAST	Predict future y-values from linear trend line.	FORECAST(x,known_y's,known_x's)	forecast 
+FREQUENCY	Counts values that fall within specified ranges.	FREQUENCY(data_array,bins_array)	frequency 
+GROWTH	    Calculates Y values based on exponential growth.	GROWTH(known_ys,known_x,new_x,const)	growth 
+INTERCEPT	Calculates the Y intercept for a best-fit line.	INTERCEPT(known_ys,known_xs)	intercept 
+LARGE	    Returns the kth largest value.	LARGE(array,k)	large 
+LINEST	    Returns statistics about a trendline.	LINEST(known_ys,known_xs,const,stats)	linest 
+MAX	        Returns the largest number.	MAX(number1,number2)	max 
+MEDIAN	    Returns the median number.	MEDIAN(number1,number2)	median 
+MIN	        Returns the smallest number.	MIN(number1,number2)	min 
+MODE	    Returns the most common number.	MODE(number1,number2)	mode 
+PERCENTILE	Returns the kth percentile.	PERCENTILE(array,k)	percentile 
+PERCENTILE.INC	Returns the kth percentile. Where k is inclusive.	PERCENTILE.INC(array,k)	
+PERCENTILE.EXC	Returns the kth percentile. Where k is exclusive.	PERCENTILE.EXC(array,k)	
+QUARTILE	Returns the specified quartile value.	QUARTILE(array,quart)	quartile 
+QUARTILE.INC	Returns the specified quartile value. Inclusive.	QUARTILE.INC(array,quart)	
+QUARTILE.EXC	Returns the specified quartile value. Exclusive.	QUARTILE.EXC(array,quart)	
+RANK	    Rank of a number within a series.	RANK(number,ref,order)	rank 
+RANK.AVG	Rank of a number within a series. Averages.	RANK.AVG(number,ref,order)	
+RANK.EQ	    Rank of a number within a series. Top Rank.	RANK.EQ(number,ref,order)	
+SLOPE	    Calculates the slope from linear regression.	SLOPE(known_ys,known_xs)	slope 
+SMALL	    Returns the kth smallest value.	SMALL(array,k)	small 
+STDEV	    Calculates the standard deviation.	STDEV(number1,number2)	
+STDEV.P	    Calculates the SD of an entire population.	STDEV.P(number1,number2)	
+STDEV.S	    Calculates the SD of a sample.	STDEV.S(number1,number2)	
+STDEVP	    Calculates the SD of an entire population	STDEVP(number1,number2)	
+TREND	    Calculates Y values based on a trendline.	TREND(known_ys,known_xs,new_xs,const)	trend 
+Text	    yes		
+CHAR	    Returns a character specified by a code.	CHAR(number)	char 
+CLEAN	    Removes all non-printable characters.	CLEAN(text)	clean 
+CODE	    Returns the numeric code for a character.	CODE(text)	code 
+CONCATENATE	Combines text together.	CONCATENATE(text1,text2)	concatenate 
+DOLLAR	    Converts a number to text in currency format.	DOLLAR(number,decimals)	
+EXACT	    Test if cells are exactly equal. Case-sensitive. TRUE/FALSE	EXACT(text1,text2)	exact 
+FIND	    Locates position of text within a cell.Case-sensitive.	FIND(find_text,within_text,start_num)	find 
+LEFT	    Truncates text a number of characters from the left.	LEFT(text,num_chars)	left 
+LEN     	Counts number of characters in text.	LEN(text)	len 
+LOWER   	Converts text to lower case.	LOWER(text)	lower 
+MID	        Extracts text from the middle of a cell.	MID(text,start_num,num_chars)	mid 
+PROPER	    Converts text to proper case.	PROPER(text)	proper 
+REPLACE	    Replaces text based on it's location.	REPLACE(old_text,start_num,num_chars,new_text)	
+REPT	    Repeats text a number of times.	REPT(text,number_times)	rept 
+RIGHT	    Truncates text a number of characters from the right.	RIGHT(text,num_chars)	right 
+SEARCH	    Locates position of text within a cell.Not Case-sensitive.	SEARCH(find_text,within_text,start_num)	search 
+SUBSTITUTE	Finds and replaces text. Case-sensitive.	SUBSTITUTE(text,old_text,new_text,instance_num)	substitute 
+TEXT	    Converts a value into text with a specific number format.	TEXT(VALUE,format_text)	text 
+TRIM	    Removes all extra spaces from text.	TRIM(text)	trim 
+UPPER	    Converts text to upper case.	UPPER(text)	upper 
+VALUE	    Converts a number stored as text into a number.	VALUE(text)	value 
